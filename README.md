@@ -32,3 +32,11 @@ ENTRYPOINT [ "json-server", "--host", "0.0.0.0" ]
 # Set the default command to serve the db.json file
 # This can be overridden to serve alt.json or any other JSON file when running the container
 CMD [ "db.json" ]
+
+## Running Commands
+
+#building
+docker build -t sample-docker .
+
+#running
+docker run -d -p 4000:3000 sample-docker
